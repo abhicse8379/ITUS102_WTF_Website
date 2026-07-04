@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tools &amp; Software · ITUS102</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .tool{ padding:20px 0; border-top:1px dashed var(--line-dim); display:grid; grid-template-columns:190px 1fr; gap:20px; }
+  .tool:first-child{ border-top:none; }
+  .tool .name{ font-family:var(--mono); font-weight:600; color:var(--paper-ink); font-size:.95rem; }
+  .tool .used{ font-family:var(--mono); font-size:.72rem; color:var(--accent); margin-top:6px; display:block; }
+  .tool .purpose{ color:var(--paper-dim); font-size:.9rem; margin-bottom:8px; }
+  .tool .tips{ margin:0; padding-left:18px; color:var(--paper-ink); font-size:.87rem; }
+  .tool .tips li{ margin-bottom:4px; }
+  .tool .get{ font-family:var(--mono); font-size:.78rem; text-decoration:none; color:var(--accent); border-bottom:1px dotted var(--accent); }
+  .install-flag{ display:inline-block; font-family:var(--mono); font-size:.65rem; letter-spacing:.06em; padding:2px 6px; margin-left:8px; border:1px solid var(--accent-2); color:var(--accent-2); vertical-align:middle; }
+</style>
+</head>
+<body>
+
+<header class="titleblock">
+  <div class="wrap">
+    <a class="tb-id" href="index.html">
+      <span class="code">ITUS102</span>
+      <span class="name">Web Technology Framework — Sem 1, CSE</span>
+    </a>
+    <nav class="tb-links">
+      <a href="index.html">Overview</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="practicals.html">Practicals</a>
+      <a href="assessment.html">Assessment</a>
+      <a href="tools.html" class="active">Tools</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </div>
+</header>
+
+<section style="padding-top:48px;">
+  <div class="wrap">
+    <div class="eyebrow">Lab Tools &amp; Software Guide</div>
+    <h1 style="font-size:1.8rem;">What to install, and when</h1>
+    <p class="lede" style="color:var(--ink-dim); max-width:66ch;">Everything under <strong>Core Development Environment</strong> should be installed before your first lab session. Everything else can wait until you reach the corresponding unit — installing it all on day one just gives you more things to troubleshoot before you need any of them.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>1 · Core Development Environment</h2><span class="install-flag" style="border-color:var(--accent); color:var(--accent);">INSTALL FIRST</span></div>
+    <div class="paper">
+
+      <div class="tool">
+        <div><div class="name">VS Code</div><span class="used">All sessions</span><a class="get" href="https://code.visualstudio.com/" target="_blank" rel="noopener">code.visualstudio.com</a></div>
+        <div>
+          <p class="purpose">Primary code editor for HTML, CSS, JavaScript, and backend code.</p>
+          <ul class="tips">
+            <li>Install the "Live Server" extension to auto-refresh pages as you edit.</li>
+            <li>Install "Prettier" for automatic code formatting.</li>
+            <li>Use the integrated terminal (Ctrl+`) to run npm/node/git without leaving the editor.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div><div class="name">Chrome (or any modern browser)</div><span class="used">All sessions</span><a class="get" href="https://www.google.com/chrome/" target="_blank" rel="noopener">google.com/chrome</a></div>
+        <div>
+          <p class="purpose">Runs and displays your pages; DevTools are used constantly for inspection and debugging.</p>
+          <ul class="tips">
+            <li>Open DevTools with F12 or Ctrl+Shift+I.</li>
+            <li><strong>Elements</strong> tab — inspect and live-edit HTML/CSS.</li>
+            <li><strong>Console</strong> tab — view JS errors and test snippets.</li>
+            <li><strong>Network</strong> tab — inspect HTTP requests/responses (Units 1, 3, 4).</li>
+            <li><strong>Lighthouse</strong> tab — audit performance, accessibility, best practices (Unit 6, Tutorial CO3).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div><div class="name">Node.js &amp; npm</div><span class="used">Sessions 3–11 (Units 2–4), Tutorial T10–T15</span><a class="get" href="https://nodejs.org/" target="_blank" rel="noopener">nodejs.org</a></div>
+        <div>
+          <p class="purpose">JavaScript runtime and package manager; runs server-side JS and installs libraries/frameworks.</p>
+          <ul class="tips">
+            <li>Verify with <code>node -v</code> and <code>npm -v</code> in a terminal.</li>
+            <li><code>npm init -y</code> to start a new project.</li>
+            <li><code>npm install &lt;package&gt;</code> to add a library (e.g. express).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div><div class="name">Git &amp; GitHub</div><span class="used">Session 2 (Unit 1) onward, all lab submissions</span><a class="get" href="https://git-scm.com/" target="_blank" rel="noopener">git-scm.com</a></div>
+        <div>
+          <p class="purpose">Version control for tracking changes and submitting/sharing lab work.</p>
+          <ul class="tips">
+            <li><code>git init</code> to start tracking a project folder.</li>
+            <li><code>git add .</code> then <code>git commit -m "message"</code> to save a checkpoint.</li>
+            <li><code>git push</code> to upload work to a GitHub repository — create a free account at github.com.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>2 · Frontend Styling &amp; UI Tools</h2><span class="pill">CO2 · CO3 · CO4</span></div>
+    <div class="paper">
+
+      <div class="tool">
+        <div><div class="name">Bootstrap</div><span class="used">Tutorial T10–T12, capstone project</span><a class="get" href="https://getbootstrap.com/" target="_blank" rel="noopener">getbootstrap.com</a></div>
+        <div>
+          <p class="purpose">CSS framework with ready-made responsive components — navbars, cards, grids, forms.</p>
+          <ul class="tips">
+            <li>Add via CDN <code>&lt;link&gt;</code>/<code>&lt;script&gt;</code> tags — no install needed for basic use.</li>
+            <li>Use the 12-column grid (<code>row</code>/<code>col-*</code>) to build responsive layouts fast.</li>
+            <li>Browse the official docs for ready-to-copy component snippets.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div><div class="name">Tailwind CSS</div><span class="used">Tutorial T10–T12, capstone project</span><a class="get" href="https://tailwindcss.com/" target="_blank" rel="noopener">tailwindcss.com</a></div>
+        <div>
+          <p class="purpose">Utility-first CSS framework for custom responsive designs without separate CSS files.</p>
+          <ul class="tips">
+            <li>Quickest start: the Tailwind CDN script tag for practice/lab use.</li>
+            <li>Style directly with utility classes, e.g. <code>class="flex p-4 md:p-8"</code>.</li>
+            <li>Use responsive prefixes (<code>sm:</code>, <code>md:</code>, <code>lg:</code>) to adapt per screen size.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div><div class="name">WAVE Accessibility Checker</div><span class="used">Tutorial T7–T9 (CO3)</span><a class="get" href="https://wave.webaim.org/" target="_blank" rel="noopener">wave.webaim.org</a></div>
+        <div>
+          <p class="purpose">Browser-based tool that flags accessibility issues — missing alt text, contrast, labels.</p>
+          <ul class="tips">
+            <li>Install the WAVE browser extension, click it while viewing your page.</li>
+            <li>Fix flagged errors first (red icons), then review alerts (yellow icons).</li>
+            <li>Re-run after each fix to confirm resolution.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>3 · Backend &amp; API Tools</h2><span class="pill">Unit 3</span></div>
+    <div class="paper">
+
+      <div class="tool">
+        <div><div class="name">Express.js</div><span class="used">Sessions 7–9 (Unit 3)</span><a class="get" href="https://expressjs.com/" target="_blank" rel="noopener">expressjs.com</a></div>
+        <div>
+          <p class="purpose">Minimal Node.js framework for building server-side routes and APIs.</p>
+          <ul class="tips">
+            <li>Install with <code>npm install express</code>.</li>
+            <li>Start a server with <code>app.listen(PORT)</code>; define routes with <code>app.get()/app.post()</code>.</li>
+            <li>Use <code>nodemon</code> (<code>npm install -g nodemon</code>) so the server auto-restarts on file changes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div><div class="name">Postman <span style="color:var(--paper-dim); font-weight:400;">(or Thunder Client)</span></div><span class="used">Session 1 (Unit 1), Sessions 7–9 (Unit 3)</span><a class="get" href="https://www.postman.com/" target="_blank" rel="noopener">postman.com</a></div>
+        <div>
+          <p class="purpose">Sends HTTP requests to test your APIs without needing a front-end.</p>
+          <ul class="tips">
+            <li>Create a request, set the method (GET/POST/PUT/DELETE) and URL.</li>
+            <li>Check the response body, headers, and status code returned.</li>
+            <li>Save related requests in a "collection" for reuse. Thunder Client is a lightweight VS Code-extension alternative.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>4 · Database Tools</h2><span class="pill">Unit 4</span></div>
+    <p style="color:var(--ink-dim); font-size:.9rem; margin-top:-10px;">Your instructor will confirm whether the lab uses the MySQL or MongoDB stack — you likely won't need both.</p>
+    <div class="paper">
+
+      <div class="tool">
+        <div><div class="name">MySQL Workbench</div><span class="used">Sessions 10–11 (Unit 4)</span><a class="get" href="https://dev.mysql.com/downloads/workbench/" target="_blank" rel="noopener">dev.mysql.com</a></div>
+        <div>
+          <p class="purpose">Visual tool to design, query, and manage a MySQL relational database.</p>
+          <ul class="tips">
+            <li>Connect to your local MySQL server using the connection wizard.</li>
+            <li>Use the SQL editor to run CRUD queries (SELECT/INSERT/UPDATE/DELETE).</li>
+            <li>Use the schema browser to inspect tables without writing SQL.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div><div class="name">MongoDB Compass</div><span class="used">Sessions 10–11, if using a NoSQL stack</span><a class="get" href="https://www.mongodb.com/products/compass" target="_blank" rel="noopener">mongodb.com/products/compass</a></div>
+        <div>
+          <p class="purpose">GUI for viewing and querying data in a MongoDB (NoSQL) database.</p>
+          <ul class="tips">
+            <li>Connect using a local connection string, e.g. <code>mongodb://localhost:27017</code>.</li>
+            <li>Browse collections and documents visually, or use the query bar.</li>
+            <li>Use the "Explain Plan" tab to see query performance — ties into query-optimization awareness.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>5 · Security &amp; Testing Awareness Tools</h2><span class="pill">Unit 5</span></div>
+    <p style="color:var(--ink-dim); font-size:.9rem; margin-top:-10px;">For inspecting and understanding your own lab projects only.</p>
+    <div class="paper">
+
+      <div class="tool">
+        <div><div class="name">Chrome DevTools — Security &amp; Application</div><span class="used">Sessions 12–13 (Unit 5)</span><a class="get" href="https://developer.chrome.com/docs/devtools/" target="_blank" rel="noopener">Built into Chrome</a></div>
+        <div>
+          <p class="purpose">Inspect HTTPS/certificate status, cookies, local/session storage, and stored credentials.</p>
+          <ul class="tips">
+            <li><strong>Security</strong> tab — check whether a page is served over a valid HTTPS connection.</li>
+            <li><strong>Application</strong> tab — inspect cookies and storage to see how session data is kept client-side.</li>
+            <li>Never enter real passwords into test pages while exploring these tabs.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tool">
+        <div><div class="name">OWASP ZAP</div><span class="used">Sessions 12–13, instructor-guided demo</span><a class="get" href="https://www.zaproxy.org/" target="_blank" rel="noopener">zaproxy.org</a></div>
+        <div>
+          <p class="purpose">Beginner-friendly scanner for common web-application misconfigurations — awareness-level use only.</p>
+          <ul class="tips">
+            <li>Only ever scan applications you own or have explicit permission to test.</li>
+            <li>Run "Automated Scan" against your own local lab project to see typical findings.</li>
+            <li>Review the generated report to understand vulnerability categories, not to exploit them.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>Getting help</h2></div>
+    <div class="card">
+      <p style="margin:0; color:var(--ink-dim);">If a tool fails to install or behaves unexpectedly: note the exact error message and bring it to your next lab or tutorial session. Most setup issues are quick to resolve with the instructor or TA present.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>ITUS102 — Web Technology Framework</span>
+    <span>CHARUSAT · FTE</span>
+  </div>
+</footer>
+
+</body>
+</html>

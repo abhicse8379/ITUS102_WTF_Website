@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITUS102 · Web Technology Framework</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="titleblock">
+  <div class="wrap">
+    <a class="tb-id" href="index.html">
+      <span class="code">ITUS102</span>
+      <span class="name">Web Technology Framework — Sem 1, CSE</span>
+    </a>
+    <nav class="tb-links">
+      <a href="index.html" class="active">Overview</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="practicals.html">Practicals</a>
+      <a href="assessment.html">Assessment</a>
+      <a href="tools.html">Tools</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">CHARUSAT · CSPIT · Dept. of Computer Science &amp; Engineering</div>
+      <h1>Web Technology Framework</h1>
+      <p class="lede">A first-semester lab course that builds a working web application, layer by layer — from a semantic HTML5 page to a full-stack, database-connected, secured, deployed product.</p>
+      <div class="stat-row">
+        <div class="stat"><div class="n">30</div><div class="l">Lab Hrs</div></div>
+        <div class="stat"><div class="n">12</div><div class="l">Practicals</div></div>
+        <div class="stat"><div class="n">2</div><div class="l">Credits</div></div>
+        <div class="stat"><div class="n">50</div><div class="l">Total Marks</div></div>
+      </div>
+      <div class="dim-line">TEACHING SCHEME</div>
+      <p style="color:var(--ink-dim); font-size:.92rem;">Practical 2 hrs/week + Tutorial 1 hr/week · 50 marks, practical only, no theory paper.</p>
+    </div>
+
+    <div>
+      <!-- Blueprint schematic: signature element, echoed across the site -->
+      <svg viewBox="0 0 420 320" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Blueprint schematic of a semantic HTML5 page layout">
+        <rect x="1" y="1" width="418" height="318" fill="#FFFFFF" stroke="#2C6690" stroke-width="1"/>
+        <!-- header -->
+        <rect x="24" y="24" width="372" height="42" fill="none" stroke="#2C6690" stroke-width="1.2"/>
+        <text x="34" y="49" font-family="IBM Plex Mono, monospace" font-size="11" fill="#B8631A">&lt;header&gt;</text>
+        <!-- nav -->
+        <rect x="24" y="76" width="372" height="26" fill="none" stroke="#2C6690" stroke-width="1.2"/>
+        <text x="34" y="93" font-family="IBM Plex Mono, monospace" font-size="10" fill="#2C6690">&lt;nav&gt;</text>
+        <!-- main + aside -->
+        <rect x="24" y="112" width="266" height="150" fill="none" stroke="#2C6690" stroke-width="1.2"/>
+        <text x="34" y="130" font-family="IBM Plex Mono, monospace" font-size="11" fill="#B8631A">&lt;main&gt;</text>
+        <rect x="46" y="142" width="222" height="34" fill="none" stroke="#6FA8CB" stroke-width="1"/>
+        <text x="54" y="162" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4C6C85">&lt;section&gt;</text>
+        <rect x="46" y="184" width="222" height="34" fill="none" stroke="#6FA8CB" stroke-width="1"/>
+        <text x="54" y="204" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4C6C85">&lt;article&gt;</text>
+        <rect x="46" y="226" width="222" height="26" fill="none" stroke="#6FA8CB" stroke-width="1"/>
+        <text x="54" y="242" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4C6C85">&lt;form&gt;</text>
+
+        <rect x="300" y="112" width="96" height="150" fill="none" stroke="#2C6690" stroke-width="1.2"/>
+        <text x="308" y="130" font-family="IBM Plex Mono, monospace" font-size="10" fill="#B8631A">&lt;aside&gt;</text>
+
+        <!-- footer -->
+        <rect x="24" y="272" width="372" height="26" fill="none" stroke="#2C6690" stroke-width="1.2"/>
+        <text x="34" y="289" font-family="IBM Plex Mono, monospace" font-size="10" fill="#2C6690">&lt;footer&gt;</text>
+
+        <!-- dimension line -->
+        <line x1="24" y1="308" x2="396" y2="308" stroke="#2C6690" stroke-width="1"/>
+        <text x="196" y="316" font-family="IBM Plex Mono, monospace" font-size="8" fill="#2C6690">FIG. 01 — SEMANTIC PAGE STRUCTURE</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="units">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Six units, one build</h2>
+      <span class="pill">30 hrs total</span>
+    </div>
+    <div class="grid cols-3">
+      <div class="card"><span class="hrs">4h · 12%</span><span class="tag">UNIT 1</span><h3>Web Architecture Fundamentals</h3><p>Client–server model, HTTP, REST basics, monoliths vs microservices, session state, Git/GitHub.</p></div>
+      <div class="card"><span class="hrs">8h · 28%</span><span class="tag">UNIT 2</span><h3>Client-Side Scripting Fundamentals</h3><p>JavaScript core, the event loop, DOM manipulation, form validation, async programming, browser storage.</p></div>
+      <div class="card"><span class="hrs">6h · 20%</span><span class="tag">UNIT 3</span><h3>Server-Side Processing Fundamentals</h3><p>Request–response lifecycle, data access layers, auth &amp; sessions, concurrency, service integration.</p></div>
+      <div class="card"><span class="hrs">4h · 13%</span><span class="tag">UNIT 4</span><h3>Web–Data Interaction Fundamentals</h3><p>CRUD, query basics, caching, consistency, connection handling, concurrent data access.</p></div>
+      <div class="card"><span class="hrs">4h · 13%</span><span class="tag">UNIT 5</span><h3>Web Security Threats &amp; Defense Awareness</h3><p>Common vulnerabilities, secure passwords, session security, input validation, defensive design.</p></div>
+      <div class="card"><span class="hrs">4h · 14%</span><span class="tag">UNIT 6</span><h3>Modern Web Ecosystem</h3><p>Cross-browser testing, DevTools, responsive frameworks, web scraping ethics, industry trends.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="outcomes">
+  <div class="wrap">
+    <div class="section-head"><h2>Course outcomes</h2><span class="pill">CO1 – CO6</span></div>
+    <div class="paper">
+      <table>
+        <thead><tr><th style="width:70px;">CO</th><th>By the end of the course, students will be able to&hellip;</th></tr></thead>
+        <tbody>
+          <tr><td><span class="co-tag">CO1</span></td><td>Design structured and semantic web pages using HTML5.</td></tr>
+          <tr><td><span class="co-tag">CO2</span></td><td>Apply CSS3 techniques to create responsive and visually appealing web layouts.</td></tr>
+          <tr><td><span class="co-tag">CO3</span></td><td>Implement UI/UX principles and accessibility standards in web design.</td></tr>
+          <tr><td><span class="co-tag">CO4</span></td><td>Develop responsive interfaces using Bootstrap and Tailwind CSS frameworks.</td></tr>
+          <tr><td><span class="co-tag">CO5</span></td><td>Perform validation, testing, debugging, and develop a complete industry-standard responsive website.</td></tr>
+          <tr><td><span class="co-tag">CO6</span></td><td>Evaluate web applications using browser developer tools, and select appropriate frameworks considering scalability, performance, and industry trends.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="display:flex; gap:16px; flex-wrap:wrap;">
+    <a class="btn" href="practicals.html">View the 12 practicals →</a>
+    <a class="btn ghost" href="assessment.html">See how it's graded →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>ITUS102 — Web Technology Framework</span>
+    <span>CHARUSAT · CSPIT · Dept. of CSE</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practicals · ITUS102</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .stats-strip{ display:flex; gap:0; border:1px solid var(--line); margin-bottom:8px; flex-wrap:wrap; }
+  .stats-strip .s{ flex:1; min-width:130px; padding:14px 16px; border-right:1px solid var(--line); }
+  .stats-strip .s:last-child{ border-right:none; }
+  .stats-strip .n{ font-family:var(--mono); font-size:1.3rem; color:var(--accent); }
+  .stats-strip .l{ font-family:var(--mono); font-size:.62rem; color:var(--ink-dim); text-transform:uppercase; letter-spacing:.06em; }
+  .platform-row{ display:grid; grid-template-columns:110px 1fr; gap:14px; padding:10px 0; border-top:1px dashed var(--line-dim); font-size:.88rem; }
+  .platform-row:first-child{ border-top:none; }
+  .platform-row .p{ font-family:var(--mono); color:var(--accent); }
+  .platform-row .t{ color:var(--ink-dim); font-family:var(--mono); font-size:.84rem; }
+</style>
+</head>
+<body>
+
+<header class="titleblock">
+  <div class="wrap">
+    <a class="tb-id" href="index.html">
+      <span class="code">ITUS102</span>
+      <span class="name">Web Technology Framework — Sem 1, CSE</span>
+    </a>
+    <nav class="tb-links">
+      <a href="index.html">Overview</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="practicals.html" class="active">Practicals</a>
+      <a href="assessment.html">Assessment</a>
+      <a href="tools.html">Tools</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </div>
+</header>
+
+<section style="padding-top:48px;">
+  <div class="wrap">
+    <div class="eyebrow">Laboratory Progression</div>
+    <h1 style="font-size:1.8rem;">12 experiments, one continuous build</h1>
+    <p class="lede" style="color:var(--ink-dim); max-width:64ch; margin-bottom:22px;">HTML → CSS → JavaScript → DOM → Forms → Async JS → Server-Side → Database → REST APIs → Web Security → Responsive Frameworks → Full-Stack Mini Project.</p>
+    <a class="btn" href="practical-list.pdf" download style="margin-bottom:26px; display:inline-block;">↓ Download full practical list PDF</a>
+    <div class="stats-strip">
+      <div class="s"><div class="n">12</div><div class="l">Experiments</div></div>
+      <div class="s"><div class="n">30</div><div class="l">Lab Hours</div></div>
+      <div class="s"><div class="n">11</div><div class="l">Industry-based</div></div>
+      <div class="s"><div class="n">1</div><div class="l">Open-ended project</div></div>
+      <div class="s"><div class="n">CO1–CO6</div><div class="l">Outcomes covered</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>Experiment list</h2></div>
+    <div class="paper">
+      <table>
+        <thead><tr><th style="width:50px;">#</th><th>Practical Title</th><th style="width:130px;">CO Mapping</th><th style="width:70px;">Hrs</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Create a semantic HTML5 webpage using appropriate structural tags and implement version control using Git &amp; GitHub</td><td><span class="co-tag">CO1</span></td><td>2</td></tr>
+          <tr><td>2</td><td>Design responsive web pages using CSS3 with Flexbox, Grid, media queries, cascading, and inheritance</td><td><span class="co-tag">CO2</span></td><td>2</td></tr>
+          <tr><td>3</td><td>Develop JavaScript programs demonstrating variables, operators, conditional statements, loops, and functions</td><td><span class="co-tag">CO3</span></td><td>3</td></tr>
+          <tr><td>4</td><td>Create interactive web pages using DOM manipulation and event handling</td><td><span class="co-tag">CO3</span></td><td>3</td></tr>
+          <tr><td>5</td><td>Design and validate HTML forms using JavaScript including regular expressions and secure input validation</td><td><span class="co-tag">CO3</span></td><td>3</td></tr>
+          <tr><td>6</td><td>Implement asynchronous JavaScript using timers, callbacks, Fetch API/AJAX, and browser storage</td><td><span class="co-tag">CO3</span></td><td>3</td></tr>
+          <tr><td>7</td><td>Develop a simple server-side application demonstrating request-response handling, routing, session management, and authentication concepts</td><td><span class="co-tag">CO5</span></td><td>2</td></tr>
+          <tr><td>8</td><td>Build a database-connected web application implementing CRUD operations with proper validation and sanitization</td><td><span class="co-tag">CO5</span></td><td>3</td></tr>s
+          <tr><td>9</td><td>Demonstrate web-data interaction using REST API integration and JSON data exchange</td><td><span class="co-tag">CO5</span></td><td>2</td></tr>
+          <tr><td>10</td><td>Perform security analysis demonstrating common web vulnerabilities (XSS, SQL Injection awareness), secure password practices, and defensive coding techniques</td><td><span class="co-tag">CO5</sspan></td><td>2</td></tr>
+          <tr><td>11</td><td>Develop a responsive website using Bootstrap and Tailwind CSS and test compatibility across multiple browsers and devices</td><td><span class="co-tag">CO2</span> <span class="co-tag">CO4</span> <span class="co-tag">CO5</span> <span class="co-tag">CO6</span></td><td>3</td></tr>
+          <tr><td>12</td><td>Mini Project — design and develop a complete responsive web application integrating HTML5, CSS3, JavaScript, server-side processing, database connectivity, a responsive framework, validation, debugging, and GitHub deployment</td><td><span class="co-tag">CO1</span> <span class="co-tag">CO2</span> <span class="co-tag">CO3</span> <span class="co-tag">CO4</span> <span class="co-tag">CO5</span> <span class="co-tag">CO6</span></td><td>2s</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>Lab phases</h2></div>
+    <div class="phases">
+      <div class="phase"><span class="name">Foundation</span><span class="exp">Exp 1–2</span><span class="focus">Web page structure and responsive styling.</span></div>
+      <div class="phase"><span class="name">Client-Side Dev</span><span class="exp">Exp 3–6</span><span class="focus">Interactive web applications using JavaScript.</span></div>
+      <div class="phase"><span class="name">Server-Side Dev</span><span class="exp">Exp 7–10</span><span class="focus">Full-stack development, databases, APIs, and security.</span></div>
+      <div class="phase"><span class="name">Frameworks &amp; Testing</span><span class="exp">Exp 11</span><span class="focus">Responsive frameworks, browser compatibility, debugging, framework evaluation.</span></div>
+      <div class="phase"><span class="name">Project</span><span class="exp">Exp 12</span><span class="focus">End-to-end responsive web application integrating all course concepts.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>Module-wise distribution</h2></div>
+    <div class="paper">
+      <table>
+        <thead><tr><th>Module</th><th style="width:110px;">Experiments</th><th>Topics Covered</th></tr></thead>
+        <tbody>
+          <tr><td>1 · Web Design Fundamentals</td><td>1–2</td><td>HTML5, semantic elements, Git &amp; GitHub, CSS3, responsive design, Flexbox, Grid, media queries</td></tr>
+          <tr><td>2 · Client-Side Programming</td><td>3–6</td><td>JavaScript fundamentals, DOM manipulation, event handling, form validation, regular expressions, Fetch API, AJAX, browser storage</td></tr>
+          <tr><td>3 · Server-Side Web Development</td><td>7–10</td><td>Node.js, Express.js, routing, sessions, authentication, database connectivity, CRUD, REST APIs, JSON, web security</td></tr>
+          <tr><td>4 · Responsive Frameworks &amp; Testing</td><td>11</td><td>Bootstrap, Tailwind CSS, cross-browser compatibility, DevTools, responsive testing</td></tr>
+          <tr><td>5 · Capstone Mini Project</td><td>12</td><td>Full-stack app integrating HTML5, CSS3, JavaScript, Node.js, database, REST APIs, security, responsive design, Git &amp; GitHub</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>Recommended platform per practical</h2></div>
+    <div class="card">
+      <div class="platform-row"><span class="p">Exp 1–2</span><span class="t">VS Code + Chrome + Git + GitHub</span></div>
+      <div class="platform-row"><span class="p">Exp 3–6</span><span class="t">VS Code + Chrome DevTools + GitHub</span></div>
+      <div class="platform-row"><span class="p">Exp 7</span><span class="t">Node.js + Express + VS Code</span></div>
+      <div class="platform-row"><span class="p">Exp 8</span><span class="t">MySQL + Express + VS Code</span></div>
+      <div class="platform-row"><span class="p">Exp 9</span><span class="t">Postman + REST APIs</span></div>
+      <div class="platform-row"><span class="p">Exp 10</span><span class="t">Chrome DevTools + OWASP awareness</span></div>
+      <div class="platform-row"><span class="p">Exp 11</span><span class="t">Bootstrap + Tailwind CSS</span></div>
+      <div class="platform-row"><span class="p">Exp 12</span><span class="t">GitHub + Render / Netlify / Vercel</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>ITUS102 — Web Technology Framework</span>
+    <span>CHARUSAT · CSPIT · Dept. of CSE</span>
+  </div>
+</footer>
+
+</body>
+</html>
