@@ -252,6 +252,9 @@ nav.tb-links a:focus-visible{
 
 @media (max-width:860px){
   body{ font-size:.97rem; }
+  .titleblock .wrap{ flex-direction:column; align-items:stretch; }
+  .tb-id{ justify-content:space-between; }
+  .tb-id .name{ display:inline; }
   .hero-grid{ grid-template-columns:1fr; }
   .grid.cols-3, .grid.cols-2{ grid-template-columns:1fr; }
   .phase{ grid-template-columns:1fr; gap:4px; }
@@ -261,5 +264,14 @@ nav.tb-links a:focus-visible{
   footer .wrap{ grid-template-columns:auto auto auto auto; text-align:left; gap:8px; font-size:.68rem; }
   .footer-logo{ width:84px; height:84px; margin:0 auto; }
   .footer-coordinator{ grid-column:auto; font-size:.66rem; }
-  nav.tb-links{ display:none; }
+  nav.tb-links{
+    display:flex;
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    justify-content:flex-start;
+    gap:6px;
+    padding-bottom:4px;
+  }
+  nav.tb-links a{ flex:0 0 auto; }
 }
