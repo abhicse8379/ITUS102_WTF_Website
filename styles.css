@@ -6,26 +6,26 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
 
 :root {
-  --bg: #fffaf2;
-  --bg-top: #fff7e8;
-  --bg-bottom: #edf8f4;
-  --bg-panel: rgba(255, 255, 255, 0.82);
-  --surface-soft: #f2f8f4;
+  --bg: #f5fbff;
+  --bg-top: #e9f7ff;
+  --bg-bottom: #f2f8e8;
+  --bg-panel: rgba(255, 255, 255, 0.84);
+  --surface-soft: #eff8fb;
   --surface-strong: #ffffff;
-  --line: #2b766f;
-  --line-dim: rgba(43, 118, 111, 0.24);
-  --ink: #19324a;
-  --ink-dim: #607285;
+  --line: #197c8c;
+  --line-dim: rgba(25, 124, 140, 0.24);
+  --ink: #102a43;
+  --ink-dim: #587084;
   --paper: rgba(255, 255, 255, 0.94);
-  --paper-ink: #19324a;
-  --paper-dim: #607285;
-  --accent: #e85d4a;
-  --accent-2: #f2a93b;
-  --accent-soft: rgba(232, 93, 74, 0.13);
+  --paper-ink: #102a43;
+  --paper-dim: #587084;
+  --accent: #e0526d;
+  --accent-2: #b8c94a;
+  --accent-soft: rgba(224, 82, 109, 0.13);
   --radius: 18px;
   --radius-sm: 12px;
-  --shadow-sm: 0 10px 30px rgba(34, 74, 86, 0.1);
-  --shadow-lg: 0 20px 45px rgba(34, 74, 86, 0.16);
+  --shadow-sm: 0 10px 30px rgba(16, 67, 89, 0.1);
+  --shadow-lg: 0 20px 45px rgba(16, 67, 89, 0.16);
   --space-1: 8px;
   --space-2: 12px;
   --space-3: 16px;
@@ -49,11 +49,11 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top right, rgba(242, 169, 59, 0.2), transparent 28%),
-    radial-gradient(circle at left center, rgba(72, 177, 157, 0.16), transparent 24%),
+    radial-gradient(circle at top right, rgba(184, 201, 74, 0.2), transparent 28%),
+    radial-gradient(circle at left center, rgba(54, 184, 198, 0.16), transparent 24%),
     linear-gradient(135deg, var(--bg-top) 0%, var(--bg) 50%, var(--bg-bottom) 100%),
-    linear-gradient(rgba(43, 118, 111, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(43, 118, 111, 0.045) 1px, transparent 1px);
+    linear-gradient(rgba(25, 124, 140, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(25, 124, 140, 0.045) 1px, transparent 1px);
   background-size: auto, auto, auto, 36px 36px, 36px 36px;
   color: var(--ink);
   font-family: var(--sans);
@@ -81,7 +81,7 @@ body::before {
   top: -120px;
   right: -80px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(242, 169, 59, 0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(184, 201, 74, 0.18), transparent 70%);
 }
 
 body::after {
@@ -90,7 +90,7 @@ body::after {
   bottom: -80px;
   left: -100px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(72, 177, 157, 0.14), transparent 72%);
+  background: radial-gradient(circle, rgba(54, 184, 198, 0.14), transparent 72%);
 }
 
 main,
@@ -150,10 +150,10 @@ p { margin: 0 0 1em; max-width: 72ch; }
   top: 0;
   z-index: 50;
   border-bottom: 1px solid var(--line-dim);
-  background: rgba(255, 250, 242, 0.86);
+  background: rgba(245, 251, 255, 0.88);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
-  box-shadow: 0 8px 24px rgba(34, 74, 86, 0.1);
+  box-shadow: 0 8px 24px rgba(16, 67, 89, 0.1);
 }
 
 .titleblock .wrap {
@@ -178,11 +178,11 @@ p { margin: 0 0 1em; max-width: 72ch; }
   font-family: var(--mono);
   font-weight: 700;
   font-size: 0.95rem;
-  border: 1px solid rgba(232, 93, 74, 0.35);
+  border: 1px solid rgba(224, 82, 109, 0.35);
   padding: 4px 8px;
   color: var(--accent);
   border-radius: 10px;
-  background: rgba(232, 93, 74, 0.08);
+  background: rgba(224, 82, 109, 0.08);
 }
 
 .tb-id .name {
@@ -219,14 +219,14 @@ nav.tb-links a:hover,
 nav.tb-links a:focus-visible {
   color: var(--ink);
   border-color: var(--line-dim);
-  background: rgba(43, 118, 111, 0.08);
+  background: rgba(25, 124, 140, 0.08);
   transform: translateY(-1px);
 }
 
 nav.tb-links a.active {
   color: #ffffff;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  box-shadow: 0 8px 18px rgba(232, 93, 74, 0.2);
+  box-shadow: 0 8px 18px rgba(224, 82, 109, 0.2);
 }
 
 /* ---------- Hero ---------- */
@@ -315,8 +315,8 @@ nav.tb-links a.active {
   max-width: 560px;
   border: 1px solid var(--line-dim);
   border-radius: 22px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(242, 248, 244, 0.96));
-  box-shadow: 0 18px 45px rgba(34, 74, 86, 0.14);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(239, 248, 251, 0.96));
+  box-shadow: 0 18px 45px rgba(16, 67, 89, 0.14);
   padding: 16px;
 }
 
@@ -362,7 +362,7 @@ section:first-of-type { border-top: none; }
 .card {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(242, 248, 244, 0.96) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(239, 248, 251, 0.96) 100%);
   border: 1px solid var(--line-dim);
   padding: 24px;
   border-radius: var(--radius);
@@ -374,13 +374,13 @@ section:first-of-type { border-top: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(232, 93, 74, 0.1), transparent 45%);
+  background: linear-gradient(135deg, rgba(224, 82, 109, 0.1), transparent 45%);
   pointer-events: none;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(232, 93, 74, 0.4);
+  border-color: rgba(224, 82, 109, 0.4);
   box-shadow: var(--shadow-lg);
 }
 
@@ -390,12 +390,12 @@ section:first-of-type { border-top: none; }
   font-family: var(--mono);
   font-size: var(--fs-100);
   color: var(--accent);
-  border: 1px solid rgba(232, 93, 74, 0.35);
+  border: 1px solid rgba(224, 82, 109, 0.35);
   display: inline-block;
   padding: 3px 8px;
   margin-bottom: 12px;
   border-radius: 999px;
-  background: rgba(232, 93, 74, 0.08);
+  background: rgba(224, 82, 109, 0.08);
 }
 
 .card h3 { position: relative; z-index: 1; font-size: 1.04rem; margin-bottom: 0.45em; }
@@ -412,7 +412,7 @@ section:first-of-type { border-top: none; }
 
 /* ---------- Tables ---------- */
 .paper {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(242, 248, 244, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(239, 248, 251, 0.98) 100%);
   color: var(--paper-ink);
   border: 1px solid var(--line-dim);
   border-radius: var(--radius);
@@ -435,7 +435,7 @@ th {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-align: left;
-  background: rgba(43, 118, 111, 0.1);
+  background: rgba(25, 124, 140, 0.1);
   color: var(--paper-dim);
   padding: 12px 14px;
   border-bottom: 2px solid var(--line-dim);
@@ -443,17 +443,17 @@ th {
 
 td {
   padding: 12px 14px;
-  border-bottom: 1px solid rgba(43, 118, 111, 0.12);
+  border-bottom: 1px solid rgba(25, 124, 140, 0.12);
   vertical-align: top;
 }
 
 tr:last-child td { border-bottom: none; }
-tr:hover td { background: rgba(242, 169, 59, 0.08); }
+tr:hover td { background: rgba(184, 201, 74, 0.08); }
 
 .co-tag {
   font-family: var(--mono);
   font-size: var(--fs-100);
-  background: rgba(232, 93, 74, 0.14);
+  background: rgba(224, 82, 109, 0.14);
   color: var(--accent);
   padding: 2px 7px;
   border-radius: 999px;
@@ -495,7 +495,7 @@ tr:hover td { background: rgba(242, 169, 59, 0.08); }
 }
 .bar-track {
   height: 8px;
-  background: rgba(43, 118, 111, 0.12);
+  background: rgba(25, 124, 140, 0.12);
   position: relative;
   overflow: hidden;
   border-radius: 999px;
@@ -595,7 +595,7 @@ footer .wrap {
   padding: 5px 10px;
   color: var(--ink-dim);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.76);
 }
 
 .btn {
@@ -606,14 +606,14 @@ footer .wrap {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   padding: 12px 20px;
   display: inline-block;
-  border: 1px solid rgba(232, 93, 74, 0.35);
+  border: 1px solid rgba(224, 82, 109, 0.35);
   border-radius: 999px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-  box-shadow: 0 8px 18px rgba(232, 93, 74, 0.16);
+  box-shadow: 0 8px 18px rgba(224, 82, 109, 0.16);
 }
 
 .btn.ghost {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.76);
   color: var(--ink);
   border-color: var(--line-dim);
   box-shadow: var(--shadow-sm);
